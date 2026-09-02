@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MC Catrina - Músicas & Hits</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navegação Superior -->
+  <header class="header">
+    <div class="logo">🔥 MC Catrina</div>
+    <input type="text" id="search-input" placeholder="Buscar música ou álbum...">
+  </header>
+
+  <main class="container">
+    
+    <!-- Hero / Apresentação -->
+    <section class="hero">
+      <div class="hero-text">
+        <span class="badge">Artista Verificada</span>
+        <h1>Discografia Oficial</h1>
+        <p>Ouça os principais hits e acompanhe todos os lançamentos do funk.</p>
+      </div>
+    </section>
+
+    <!-- Filtros por Categoria -->
+    <section class="filters">
+      <button class="filter-btn active" data-category="todos">Todas</button>
+      <button class="filter-btn" data-category="lancamentos">Lançamentos</button>
+      <button class="filter-btn" data-category="populares">Mais Tocadas</button>
+      <button class="filter-btn" data-category="parcerias">Feats & Parcerias</button>
+    </section>
+
+    <!-- Lista de Músicas -->
+    <section id="music-list" class="music-grid">
+      <!-- Músicas carregadas via JavaScript -->
+    </section>
+
+  </main>
+
+  <!-- Player Fixo na Parte Inferior -->
+  <div class="player-bar" id="player-bar">
+    <div class="track-info">
+      <strong id="current-title">Selecione uma faixa</strong>
+      <span id="current-artist">MC Catrina</span>
+    </div>
+    <div class="player-controls">
+      <button id="btn-play-pause" class="control-btn">▶</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
